@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>NavGurukul</title>
+  <link rel="stylesheet" href="assets/css/app.css" />
+
+  <meta name="author" content="" />
+  <meta property="og:title" content="NavGurukul" />
+  <meta property="og:url" content="http://navgurukul.org" />
+  <meta property="og:image" content="http://navgurukul.org/img/sqlogo.jpg" />
+  <meta property="og:description" content="NavGurukul is a non-profit initiative to provide a meaningful alternative to the college education. We train youth from humble backgrounds for free in software programming and other aspirational opportunities."
+  />
+  <meta name="description" content="NavGurukul is a non-profit initiative to provide meaningful alternative to college education. We train youth from humble backgrounds for free in software programming and other aspirational opportunities." />
+  <link href="https://fonts.googleapis.com/css?family=Mrs+Sheppards%7CDosis:300,400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800;" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <link rel="stylesheet" href="/assets/css/faq.css">
+  <!-- endinject -->
+</head>
+
+<body>
+   <nav id="mainNav" class="navbar navbar-expand-md navbar-default fixed-top navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html#page-top"><img src="assets/img/logo.png" alt="logoNavGurukul" class="logoheader"></a>
+    <div class="nav-item dropdown" style="cursor: pointer;">
+      <a class="nav-link dropdown-toggle text-primary" id="selected_option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+      <div class="dropdown-menu" aria-labelledby="dropdown09">
+        <a class="dropdown-item" id="other_option" onclick="changeLang()"></a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav nav">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT
+                        <span class="sr-only">(current)</span>
+                    </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#page-top">PARTNER
+                        <span class="sr-only">(current)</span>
+                    </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="http://medium.com/navgurukul">BLOG
+                        <span class="sr-only">(current)</span>
+                    </a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" class="nav-link" href="http://saral.navgurukul.org">&lt;SARAL&gt;
+                    </a>
+        </li>
+        <li class="nav-item">
+          <a rel="nowfollow" class="nav-link" href="http://admissions.navgurukul.org" target="_blank">APPLY
+                    </a>
+        </li>
+        <li class="nav-item">
+          <a rel="nowfollow" class="nav-link" href="alumni.html">ALUMNI
+                </a>
+        </li>
+        <li class="nav-item">
+          <a rel="nofollow" class="nav-link" href="hire.html">HIRE
+                    </a>
+        </li>
+        <li class="nav-item">
+          <a rel="nofollow" class="nav-link" href="donate.html">DONATE
+                            <span class="sr-only">(current)</span>
+                        </a>
+        </li>
+        <li class="nav-item">
+                    <a rel="nofollow"  class="nav-link" href="faq.html">FAQ
+                    </a>
+                </li>
+        <!-- <li class="nav-item">
+                    <a target="_blank"  class="nav-link" rel="nofollow" href="https://angel.co/navgurukul-foundation/jobs">JOIN US
+                    </a>
+                </li> -->
+      </ul>
+      <!-- <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+    </div>
+  </div>
+</nav>
+  <main role="main" class="minHeight">
+    <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+      <div class="container">
+        <h2 class="mb-3 text-dark text-center ">Frequently Asked Questions</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
+                <a href="#about" class="nav-link text-primary" data-toggle="pill" role="tab"
+                  aria-controls="about" aria-selected="false">
+                  <span>About The Program</span>
+                </a>
+                <a href="#Admissions" class="nav-link text-primary" data-toggle="pill" role="tab"
+                  aria-controls="Admissions" aria-selected="false">
+                  <span>Admissions</span>
+                </a>
+                <a href="#partnership" class="nav-link text-primary" data-toggle="pill" role="tab"
+                  aria-controls="partnership" aria-selected="false">
+                  <span>Mobilise Students</span>
+                </a>
+                <a href="#job" class="nav-link text-primary" data-toggle="pill" role="tab"
+                  aria-controls="job" aria-selected="false">
+                  <span>Jobs</span>
+                </a>
+                <a href="#success" class="nav-link text-primary" data-toggle="pill" role="tab"
+                  aria-controls="success" aria-selected="false">
+                  <span>Success Cases</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 mb-3 ">
+              <div class="tab-content border" id="faq-tab-content">
+                <div class="tab-pane  show active" id="about" role="tabpanel"
+                  aria-labelledby="about">
+                  <div class="accordion" id="about">
+                    <h3 class="mt-4 text-dark text-center text-capitalize"><span>About The Program</span></h3>
+                    <div class="card ">
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#cbcf5c7a23e7bb673872d5dcc344c0697"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            1: <span>WHAT IS NAVGURUKUL PROGRAM?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse show" id="cbcf5c7a23e7bb673872d5dcc344c0697" data-parent="#about">
+                        <div class="card-body">
+                          <p> <span>NavGurukul offers a <b> free one-year residential program for underprivileged students to </b>learn software engineering</b> and get guaranteed high paying aspirational jobs. Apart from software engineering, there is an intense focus on English training and personality development. It is a meaningful alternative to a college for the job-seeking young adults.</span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#c9380a870e3c43a6650926e8b853d3ca4"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            2: <span>HOW DOES ONE YEAR EDUCATION AT NAVGURUKUL LOOK LIKE?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="c9380a870e3c43a6650926e8b853d3ca4" data-parent="#about">
+                        <div class="card-body">
+                          <p> <span><div>One year at Navgurukul is divided into three key phases:<br><ol> <li style=' margin-top: 5px; '><b>Foundation Bootcamp:</b>The students work on their foundational learning habits for logical and English skills. This lasts for 1-2 months.</li> <li style=' margin-top: 5px; '><b>Coding Camp:</b> This lasts for 5-6 months where the students learn coding skills and continue working on their English and leadership skills </li> <li style=' margin-top: 5px; '><b>Interview Camp:</b> This lasts for 1-2 months where the students practice working in an office environment on Navgurukul campus and work on their resumes, interview skills and give interviews in companies.</li></ol> </div></span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#cada875c1792a198e32de5a22e08de2fc"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            3: <span>WHO IS THIS PROGRAM FOR?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="cada875c1792a198e32de5a22e08de2fc" data-parent="#about">
+                        <div class="card-body">
+                          <p> <span>This program is for youth from underserved or low-income communities who can’t afford or access college education. We also take students who have done college degrees but can’t get a good job becauseof lack of their social and economic means. Anyone who is above 16 years of age and can clear our 10th grade level maths test and interviews, can get into this program. Our current students come from low-income and socially marginalized communities where family incomes are often less than 15000 (in urban areas) and 8000 (in rural areas). Navgurukul is for the students who don’t have easy access to growth opportunities in the job market but have a desire to be successful. Many of our current students have parents working as househelp, auto-drivers, from orphanages etc.</span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#c8e47a30f5e189cac7dab4e155a3ba762"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            4: <span>WHAT THINGS DO STUDENTS LEARN AT NAVGURUKUL?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="c8e47a30f5e189cac7dab4e155a3ba762" data-parent="#about">
+                        <div class="card-body">
+                          <p> <span>Students learn Software engineering during one year like how to make mobile applications such as Whatsapp, Facebook and website by different programming languages for both front end and back end web development. The technology curriculum includes following coding languages: Python, JavaScript, Java, Node.js and React.js. Apart from that to get a standard job in corporates we provide them with a platform where they can build leadership, management, emotional intelligence, team-work skills and English speaking skills. These skills help in the overall development of an individual.</span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#c366fa7ca9e64c77575aeae7ae9965738"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            5: <span>WHERE IS THIS RESIDENTIAL PROGRAM?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="c366fa7ca9e64c77575aeae7ae9965738" data-parent="#about">
+                        <div class="card-body">
+                          <p> <span><div>We have two campuses, one is in Bangalore for girls and second in Dharamshala (Himachal) for Boys.Here is an address for both the campuses:-<br><ol> <li style=' margin-top: 5px; '><b>Pune Girls Campus:</b> Address to be updated. Starting May 1, 2020 .</li> <li style=' margin-top: 5px; '><b>Bangalore Girls Campus:</b> ​ ​ 45/1, 45/2, Avalahalli Huskur Panchayath, Sarjapura Hobli, Anekal Taluk Dist, Bengaluru, Karnataka 560099.</li> <li style=' margin-top: 5px; '><b>Dharamshala Boys Campus:</b> ​Ward number 202, Sukkhad (Garh, Dharamshala, Himachal Pradesh 176057.</li></ol> </div></span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#cc3ae5d34e3c9a175b8ad59193c0cc419"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            6: <span>WHAT ARE THE FACILITIES PROVIDED BY NAVGURUKUL?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="cc3ae5d34e3c9a175b8ad59193c0cc419" data-parent="#about">
+                        <div class="card-body">
+                          <p> <span>The residential campuses are equipped with facilities needed for living i.e shared dorms, beds, fully functional kitchen, and other amenities. In each facility, there are classrooms and residential spaces. We provide all the facilities which are necessary to become a good Software engineer such as Laptop, Internet, mentoring by experts/professionals, English classes, mental health counselling. All the expenses are paid by Navgurukul until a student gets a job.</span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#cbd9a7b385b6a7af7968f372d4f988042"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            7: <span>DO STUDENTS HAVE TO PAY ANYTHING?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="cbd9a7b385b6a7af7968f372d4f988042" data-parent="#about">
+                        <div class="card-body">
+                          <p> <span>This is a free course - we don’t charge anything for it. But we work on the value of givingness. If a student gets a job we encourage her to take responsibility for supporting another student’s education at Navgurukul. Most of our alumni donate INR ~1 Lac to Navgurukul in small installments within 2 to 2.5 years after getting a job.</span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#ca0693ceb363d112d4714be2e4db286fe"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            8: <span>WHAT IS THE LIFESTYLE AND CULTURE AT NAVGURUKUL?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="ca0693ceb363d112d4714be2e4db286fe" data-parent="#about">
+                        <div class="card-body">
+                          <p> <span>The students are responsible to take care of activities in the residential campus. With the help of facility in-charge, students divide themselves into discipline, budget, and learning councils. Each council takes care of the efficient working of the residence campus and learning. Starting the day at the morning circle they set their learning targets for the day and also resolve their challenges.During the day they divide their time between working on real world projects with their peers, understanding the hindi curriculum and getting help from their mentors.There are a lot of fun activities which focus on skills like english learning and becoming a more aware human. The culture of Navgurukul is driven by empathy and inclusivity. We strongly believe in being compassionate and understanding towards each other by offering safe-space for dialogue, open-mindedness, and respectful disagreement. We constantly work towards diversity in terms of caste, class, gender, and life experiences. We believe in listening and understanding from each other’s lived experiences and world views. We believe in growing together and thus, take responsibility for each other’s learning and growth.</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane  " id="Admissions" role="tabpanel"
+                  aria-labelledby="Admissions">
+                  <div class="accordion" id="Admissions">
+                    <h3 class="mt-4 text-dark text-center text-capitalize"><span>Admissions</span></h3>
+                    <div class="card ">
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#ce721c2370024b674d4c15f5235dd09c6"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            1: <span>WHAT IS THE ADMISSION CRITERIA?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse show" id="ce721c2370024b674d4c15f5235dd09c6" data-parent="#Admissions">
+                        <div class="card-body">
+                          <p> <span>Any applicant who is above 16 years of age and can clear test and interviews based on 10th level Maths and 8th level, they can become part of Navgurukul. Our current students have different education levles - school dropouts, college drop outs, 10th or 12th pass, people going to colleges for BSc, BA, BTech. A person can be from commerce, arts or science and still learn coding with us. The knowledge of coding is also not necessary. Just 10th level maths and some English will be good.</br> All of our students come from families with monthly incomes of less than 15,000 INR in urban areas and 10,000 INR in rural areas.</span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#c15b552292affd182d3737f2b55eb5b69"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            2: <span>HOW TO GET ADMISSION IN NAVGURUKUL?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="c15b552292affd182d3737f2b55eb5b69" data-parent="#Admissions">
+                        <div class="card-body">
+                          <p> <span><div> Each applicant has to go through four steps during the admission process - all of this is completed within a week of the student taking the first test:<br> <ol> <li style=' margin-top: 5px; '><b> Maths Written Test: </b> It contains questions on 8th-10th grade maths on four topics: ratios and proportions, unitary method, percentages, and basic algebra. This test is 1.5 hrs long. The students can give the test on their smartphone or laptops on admissions.navgurukul.org . If a student doesn’t have phone, an NGO/School can conduct the test for interested students</li> <li style=' margin-top: 5px; '><b>English Interview:</b>Once a student clears the written test, they will get a call within 2 days for taking their English Interview. In this interview, the interviewer will talk about general things to the applicant for 10-15 minutes. Here assessment will be done on checking the levels of fluency, grammar, sentence structure and confidence. Imperfect English is acceptable.</li> <li style=' margin-top: 5px; '><b> Algebra Interview: </b> If the second step is cleared, a 40-50 mins telephonic interview will be taken to test the applicant’s knowledge about basic algebra (linear equations). The applicant will be asked 3-4 algebra questions and will be asked to explain how to solve them.</li> <li style=' margin-top: 5px; '><b> Culture-Fit Interview: </b> If all the above is cleared, a 30 mins telephonic interview will be taken to understand whether the applicant will enjoy Navgurukul’s community and learning culture. This conversation would be centered around your upbringing, your family background, your beliefs and understanding about social issues etc.</li> </ol> </div></span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#c4206ddd7c9991ed3ed6bbe6e3f8502e9"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            3: <span>HOW TO GIVE ADMISSION TEST?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="c4206ddd7c9991ed3ed6bbe6e3f8502e9" data-parent="#Admissions">
+                        <div class="card-body">
+                          <p> <span><div> <ol> <li style=' margin-top: 5px; '><b>ONLINE : </b> The students can give the test on their smartphone by calling or laptop using admissions.navgurukul.org</li> <li style=' margin-top: 5px; '><b>OFFLINE :</b> :A non-profit organisation, school, college or some other group can conduct a test for interested applicants. We send them a question paper and instructions to conduct the test. Once the test is over, the person-in-charge has to email us to the pictures of the answer sheets. The interviews happen on phone or whatsapp video calls.</li> </ol> </div></span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#cc10c911986c08e151d239fe02bba28f0"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            4: <span>IS THERE UPPER AND MINIMUM AGE LIMIT FOR ADMISSION?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="cc10c911986c08e151d239fe02bba28f0" data-parent="#Admissions">
+                        <div class="card-body">
+                          <p> <span>We take 16+ students. We don’t have any upper age limit for students. Right now, our students are in the age bracket of 17-28 years old.</span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#cb405e1c83a399f53c95b545de524cf2f"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            5: <span>HOW CAN STUDENTS PREPARE FOR THE ADMISSION TEST?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="cb405e1c83a399f53c95b545de524cf2f" data-parent="#Admissions">
+                        <div class="card-body">
+                          <p> <span>The test is fully based on 9-10th level mathematics. It involves basic algebra problems and logical problem solving. So revising these concepts would be enough. The test is fairly simple than many entrance exams.  There are going to be easy/medium level hard questions for the following topics:<b> number patterns </b>(like 2, 7, 12, 17, __ what's the next number?), <b> ratios/proportions </b> (  10% of the solution is lemon. much  ml o f lemon should we add in the new solution such that 20% of the new solution is lemon?)  ,  <b>unitary method, and basic algebra linear equations</b> etc. An applicant can use following study guide to prepare for our admission test.<br></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane  " id="partnership" role="tabpanel"
+                  aria-labelledby="partnership">
+                  <div class="accordion" id="partnership">
+                    <h3 class="mt-4 text-dark text-center text-capitalize"><span>Mobilise Students</span></h3>
+                    <div class="card ">
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#cf96f097d86ae3fbd0f0c19445584a4d0"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            1: <span>HOW CAN AN ORGANISATION CONDUCT AN INFORMATION SESSION AND TEST FOR THEIR COMMUNITY?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse show" id="cf96f097d86ae3fbd0f0c19445584a4d0" data-parent="#partnership">
+                        <div class="card-body">
+                          <p> <span><div> <ol> <li style=' margin-top: 5px; '><b> Mobilize people</b> to attend the information session using your on-going communications activities. You can use the posters and Whatsapp/phone messages sent by Navgurukul.</li> <li style=' margin-top: 5px; '><b> Go through this information package</b> and our youtube channel to understand fully about the program. If you have any additional questions, write to us on <i>s@navgurukul.org</i> or Whatsapp us at 9870326110. </li> <li style=' margin-top: 5px; '><b> Talk about our program, show our students’ videos on youtube</b> to help the attendees of your information session. If critical, we can also arrange a video session with one of our students or team members during the workshop.</li> <li style=' margin-top: 5px; '><b> We will send you sets of question papera and instructions for conducting the test.</b> The test is one and a half hour long. Once the test is over, the person in charge will have to email us pictures of the answer sheets. We will follow-up with the people who clear the written test for a telephonic interview.</li> </ol> </div></span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#c142b43cc0e1f9a5663733d9d5afde236"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            2: <span>HOW DOES A PARTNERSHIP WITH NAVGURUKUL LOOK LIKE?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="c142b43cc0e1f9a5663733d9d5afde236" data-parent="#partnership">
+                        <div class="card-body">
+                          <p> <span>We have many NGOs as our impact partners. We need their valuable efforts and time to reach out to the most vulnerable groups who could use this program for their benefit. The expenses for mobilization can be discussed and negotiated. The partnership begins with collaborating with NGOs to maximize outreach to their communities. Once the students are selected through the admission tests (either conducted by the organisation or given individually on phones), we provide regular updates to our partners about the students’ growth. This helps the organisations notonly keep in touch with their community members who came to Navgurukul but also help others in the community to connect with his/her journey. We keep in touch with our partners to understand their needs and expectations from us during a student’s journey. Many partners also take workshops on various issues with our Navgurukul students such as theatre, gender sensitization, time management, etc. If you are interested in working with us in that regard, please reach out to us at <i>s@navgurukul.org</i> </span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane  " id="job" role="tabpanel"
+                  aria-labelledby="job">
+                  <div class="accordion" id="job">
+                    <h3 class="mt-4 text-dark text-center text-capitalize"><span>Jobs</span></h3>
+                    <div class="card ">
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#cc36d2dd740c4e0b7f05ccfe22a189ad4"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            1: <span>HOW DO STUDENTS GET JOBS?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse show" id="cc36d2dd740c4e0b7f05ccfe22a189ad4" data-parent="#job">
+                        <div class="card-body">
+                          <p> <span>We have an in-house Training and Placement coordinator and team. The team is in-charge to provide students essential soft skills such as communication, interview preparation, resume building etc. Each student is helped through internal interview preparation before appearing for an interview outside.The Training and Placement coordinator also gets each student interviews opportunities and offers help through-out the whole process.</span></p>
+                        </div>
+                      </div>
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#c3cd932ac4ad3ba2d3c3ac7f23fec801a"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            2: <span>WHAT KIND OF JOBS DO STUDENTS GET?</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse " id="c3cd932ac4ad3ba2d3c3ac7f23fec801a" data-parent="#job">
+                        <div class="card-body">
+                          <p> <span>A student becomes a software developer and gets standard pay job(25,000-50,000). Some of our students working in big corporations such as MindTree, Directi, ThoughtWorks and some with reputed startups like Mahtti, Gamingmonk, Codeyug, Safal Solutions, BSD Technologies, FTwo, Repup, WhiteHat, Momspresso etc. Some of our students have also decided to work as freelancers i.e. taking coding assignments across the country/world and work at their own convenience. These are high-growth jobs in which students can keep progressing professionally with the help of their ability to pick up more technologies and projects</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane  " id="success" role="tabpanel"
+                  aria-labelledby="success">
+                  <div class="accordion" id="success">
+                    <h3 class="mt-4 text-dark text-center text-capitalize"><span>Success Cases</span></h3>
+                    <div class="card ">
+                      <div class="card-header">
+                        <h5>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#ccca9feb1d89b53477748cac5789da35e"
+                            aria-expanded="false" aria-controls="accordion-tab-2-content-1">
+                            1: <span>ANY SUCCESS CASES</span>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse show" id="ccca9feb1d89b53477748cac5789da35e" data-parent="#success">
+                        <div class="card-body">
+                          <p> <span>Around 90 students have gotten jobs in companies and startups as software developers. We also have some students who chose to become digital literacy trainers in NGOs. Some of our students started their own freelancing unit.<br/> You can read about some of our alumni profiles here: ​ <a href = https://navgurukul.org/alumni.html> Please visit </a></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+  </main>
+  <section class="bg-dark pt-2 pb-2">
+      <div class="container">
+          <div class="row bg-dark">
+              <!-- <div class="col-md-4">
+                  <ul class="nav-footer">
+                      <li>
+                          <a href="index.html#page-top">Home</a>
+                      </li>
+                      <li>
+                          <a href="http://saral.navgurukul.org">&lt;SARAL&gt;</a>
+                      </li>
+                      <li>
+                          <a href="about.html">About</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <ul class="nav-footer">
+                      <li>
+                          <a href="index.html#team">Team</a>
+                      </li>
+                      <li>
+                          <a href="donate.html">Donate Now</a>
+                      </li>
+                      <li>
+                          <a href="https://angel.co/navgurukul-foundation/jobs">Join Us</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <ul class="nav-footer">
+                      <li>
+                          <a href="index.html#contact">Contact</a>
+                      </li>
+                      <li>
+                          <a href="index.html#toc">Theory Of Change</a>
+                      </li>
+                      <li>
+                          <a href="honours.html">Roll Of Honours</a>
+                      </li>
+                  </ul>
+              </div> -->
+              <div class="col-md-12 text-center">
+                  <span class="bottombrand wow flipInX">&copy; 2016 NavGurukul.org</span>
+              </div>
+          </div>
+      </div>
+  </section>
+      
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments);
+      }), (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+    ga("create", "UA-87278976-1", "auto");
+    ga("send", "pageview");
+  </script>
+
+  <!-- Facebook Pixel Code -->
+	<script>
+		  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	    n.queue=[];t=b.createElement(e);t.async=!0;
+	    t.src=v;s=b.getElementsByTagName(e)[0];
+	    s.parentNode.insertBefore(t,s)}(window, document,'script',
+		      'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '831691363937316');
+  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+				       src="https://www.facebook.com/tr?id=831691363937316&ev=PageView&noscript=1"
+	   /></noscript>
+	<!-- End Facebook Pixel Code -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <!-- inject:js -->
+  <script src="/assets/js/alumni-min.js"></script>
+  <script src="/assets/js/common-min.js"></script>
+  <script src="/assets/js/iframe-min.js"></script>
+  <script src="/assets/js/language-min.js"></script>
+  <script src="/assets/js/readmore-min.js"></script>
+  <script src="/assets/js/slick-min.js"></script>
+  <script src="/assets/js/video-deck-min.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>

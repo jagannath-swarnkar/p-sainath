@@ -1,0 +1,1 @@
+$(document).ready(function(){var t=$("#textContent").width(),e=9*t/16;$("iframe#leftTextContent").width(t),$("iframe#leftTextContent").height(e)});

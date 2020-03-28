@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["iframe.js"],"sourcesContent":["$(document).ready(function () {\n  var iWidth = $('#textContent').width();\n  var iHeight = iWidth * 9 / 16;\n  $(\"iframe#leftTextContent\").width(iWidth);\n  $(\"iframe#leftTextContent\").height(iHeight);\n});\n"],"file":"iframe.js"}
